@@ -1,0 +1,112 @@
+.path {
+  margin: 50px auto 50px auto;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0px;
+  list-style-type: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);
+  background-repeat: repeat-y;
+  background-position: 50% 0
+}
+.path *,
+.path *:after,
+.path:after,
+.path *:before,
+.path:before,{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+.path .year{
+  font-size: 2em;
+  max-width: 4em;
+  clear: both;
+  margin: 1em auto;
+  color: white;
+  border-radius: 30% / 100%;
+  text-align: center;
+  margin-top: 50px
+}
+
+.path .year+.stops{
+  margin-top: -1.5em
+}
+.path .stops{
+  position: relative;
+  text-align: left;
+  float: right;
+  clear: right;
+  width: 40%;
+  margin-top: 30px;
+  border-radius: 5px;
+  list-style-type: none;
+  display: block;
+  padding: 1.4em;
+  background: white;
+  z-index: 15;
+  color: #4d4d4d;
+  border: 1px solid #d0d0d0;
+  text-decoration: none;
+  -webkit-transition: background .15s linear;
+  -moz-transition: background .15s linear;
+  -ms-transition: background .15s linear;
+  -o-transition: background .15s linear;
+  transition: background .15s linear
+}
+@media all and (max-width: 600px) {
+  .path .stops {
+    width: 100%
+  }
+}
+.path .stops.offset-first{
+  margin-top: -1.5em
+}
+.path .stops.offset-first{
+  margin-top: -1.5em
+}
+.path .stops:hover{
+  background: #f6f6f6
+}
+.path .stops:hover:after{
+  background: #0066bb;
+}
+.path .stops:nth-of-type(even){
+  float: left;
+  clear: left
+}
+.path .stops:nth-of-type(even):after{
+  right: -20%;
+  left: auto
+}
+.path .stops:nth-of-type(odd){
+  margin-top: -1em;
+}
+@media all and (min-width: 650px) {
+  .path .stops:after{
+    display: block;
+    content: ' ';
+    height: 5px;
+    width: 80px;
+    background: #9d9d9d;
+    border-radius: 50%;
+    position: absolute;
+    left: -20%;
+    top: 1.5em;
+    border: 2px solid white
+  }
+}
+.path{
+  display: block;
+  font-weight: bold
+}
+.path.year{
+  background: white;
+  color: #505050;
+  border: 2px solid #505050
+}
+.path.stops{
+  border: none;
+  background: #FAFAFA;
+  border-bottom: 1px solid #cac4c4
+}
